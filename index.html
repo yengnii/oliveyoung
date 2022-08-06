@@ -231,7 +231,7 @@
 
         console.log(Mycolors);
         const getMakeupList = async () => { // 약 900개
-            const data = await fetch(URL); // fetch(URL)
+            const data = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'); // fetch(URL)
             const rowData = await data.json(); // .then( makeups => makeups.json() )
             rowData.forEach( makeups => {
                 // console.log( makeups );
